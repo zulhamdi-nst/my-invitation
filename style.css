@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(68, 0, 82);
+}
+html {    
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(201, 214, 219);
+    color: #222222;
+}
+
+.container {
+    overflow: hidden;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cover Depan */
+
+.bungaAtasHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -80px;
+}
+.bungaAtasHeader img:first-child {
+    transform: rotate(-45deg);
+    position: relative;
+    left: -15%;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: moveScale1;
+}
+.bungaAtasHeader img:last-child {
+    transform: rotate(45deg);
+    position: relative;
+    left: 11%;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: moveScale2;
+}
+.bungaBawahHeader {
+    display: flex;
+    position: relative;
+    top: 8%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+.bungaBawahHeader img:first-child {
+    transform: rotate(45deg);
+    position: relative;
+    left: -15%;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: moveScale3;
+}
+.bungaBawahHeader img:last-child {
+    transform: rotate(-45deg);
+    position: relative;
+    left: 15%;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: moveScale4;
+}
+
+@keyframes moveScale1 {
+    0% {
+    }
+    50% {        
+        transform: rotate(-35deg);
+    }
+    100% {
+    }
+}
+@keyframes moveScale2 {
+    0% {
+    }
+    50% {        
+        transform: rotate(40deg);
+    }
+    100% {
+    }
+}
+@keyframes moveScale3 {
+    0% {
+    }
+    50% {        
+        transform: rotate(35deg);
+    }
+    100% {
+    }
+}
+@keyframes moveScale4 {
+    0% {
+    }
+    50% {       
+        transform: rotate(-35deg);
+    }
+    100% {
+    }
+}
+
+header {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/backgroundUndangan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.namaJudul {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(68, 0, 82);
+    letter-spacing: 2px;
+}
+.namaJudul p:nth-child(1){
+    
+    position: relative;
+    top: -15%;
+    font-family: 'Lobster', cursive;
+    font-size: 1.9em;
+    
+}
+
+.namaJudul p:nth-child(2){
+    padding-top: 2%;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+}
+.namaJudul p:nth-child(3){
+    font-size: .9em;
+    letter-spacing: 0px;
+    padding-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+.namaJudul p:nth-child(4){
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0px;
+    padding-top: 1%;
+    font-family: 'Roboto', sans-serif;
+}
+.namaJudul p:nth-child(5){
+    font-size: 1em;
+    letter-spacing: 0px;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    font-family: 'Roboto', sans-serif;
+}
+.namaJudul a {
+    position: relative;
+    top: 15%;
+    text-decoration: none;
+    padding: 1%;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0px;
+    color: #fff;
+    border: 2px solid rgba(68, 0, 82, 0.692);
+    background-color: #887bb0;
+    letter-spacing: 1.5px;
+    z-index: 1;
+}
+
+/* Cover Depan - End */
+
+/* splitSatu */
+.splitSatu {
+    display: flex;
+    
+
+}
+.splitSatu {
+    background-image: url(img/backgroundUndangan.jpg);
+}
+.splitSatu div:first-child {
+    position: relative;
+    height: 50px;
+    width: 50%;
+    background-color: #887BB0;
+    z-index: 5;
+    border-radius: 0 20px 20px 0;
+}
+.splitSatu div:last-child {
+    position: relative;
+    height: 50px;
+    width: 50%;
+    background-color: #887BB0;
+    z-index: 5;
+    border-radius: 20px 0 0 20px;
+}
+/* splitSatu End */
+
+/* Halaman 1 */
+.bungaAtasHalaman-1 {    
+    position: relative;
+    top: -70px;
+    width: 100%;    
+}
+.bungaAtasHalaman-1 img{
+    position: absolute;
+}
+
+main {
+    position: relative;
+    background-image: url(img/backgroundUndangan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bungaAtasHalaman-1 img{
+    position: absolute;
+    transform: rotate(45deg);
+    left: 70%;
+    bottom: -220px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: moveScale2;
+}
+
+.halaman-1 {
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.halaman-1 .tulisanArab {
+    padding-top: 40%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2em;
+    color: #222222;
+    margin-bottom: 30px;
+    color: rgb(68, 0, 82);
+}
+.halaman-1 p:nth-child(2) {
+    margin-bottom: 10px;
+}
+.halaman-1 p:nth-child(3) {
+    text-align: justify;
+    line-height: 21px;
+}
+
+.halaman-1 img {
+    height: 200px;
+    width: 150px;
+    border-radius: 300px 300px 200px 0;
+}
+.halaman-1 .imageUtama {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.imageUtama img:first-child {
+    position: relative;
+    width: 300px;
+    height: 310px;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: animasiBungaTengah;
+}
+
+@keyframes animasiBungaTengah {
+    0% {
+
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    
+}
+
+.imageUtama img:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+}
+.halaman-1 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: rgb(68, 0, 82);
+    margin-bottom: 20px;
+}
+.halaman-1 :nth-last-child(2) {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.halaman-1 :last-child {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.waktuDanTempat {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    color: #222222;
+}
+.waktuDanTempat .wdt-1 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.waktuDanTempat .wdt-1 p:nth-child(1){
+    margin-bottom: 5px;
+}
+.waktuDanTempat .wdt-1 p:nth-child(3){
+    margin-top: 10px;
+    color: rgb(68, 0, 82);
+}
+.waktuDanTempat .wdt-1 p:nth-child(2) {
+    padding: 5px 15px;
+    background-color: #887BB0;
+    border-radius: 5px;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.waktuDanTempat .wdt-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 5px solid #887bb0;
+    padding-left: 10px;
+    color: rgb(68, 0, 82);
+}
+.waktuDanTempat .wdt-2 p:nth-last-child(){
+    height: 100px;
+}
+.maps {
+    height: 100px;
+    width: 100%;
+    padding: 0 10%;
+}
+.maps iframe {    
+    border: 2px solid #887bb0;
+}
+.halaman-akhir {
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 1.3em;
+    color: rgb(68, 0, 82);
+    margin-top: 50px;
+}
+.halaman-akhir p:nth-child(1) {
+    margin-top: 20px;
+    text-indent: 40px;
+    text-align: justify;
+}
+.halaman-akhir p:nth-child(2) {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+.halaman-akhir p:nth-child(3){
+    display: flex;
+    justify-content: center;
+    color: rgb(68, 0, 82);
+
+}.halaman-akhir p:nth-child(4){
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(68, 0, 82);
+}
+.gambarAtasFooter {
+    position: relative;
+}
+.gambarAtasFooter img{
+    position: absolute;
+    min-height: 150px;
+    width: 150px;
+    rotate: -90deg;
+    top: -130px;
+    left: -10px;
+    z-index: 1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: animasiBungaTengah;
+
+}
+
+/* main end */
+.bungaTengah {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+.bungaTengah img:first-child {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    rotate: 60deg;
+    left: -110px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: animasiBungaTengah;
+}.bungaTengah img:last-child {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    rotate: -60deg;
+    left: 330px;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;    
+    animation-timing-function: linear;
+    animation-name: animasiBungaTengah;
+}
+.galeri p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 2.5em;
+    padding-bottom: 2px;
+    margin-bottom: 5%;
+    font-family: 'Lobster', cursive;
+    z-index: 2;
+}
+.galery {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 4px;
+
+}
+.galery img {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #887BB0;
+}
+.galery a {
+    width: 42%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    height: 50px;
+    background-color: #887BB0;
+    z-index: 2;
+}
